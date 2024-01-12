@@ -1,0 +1,56 @@
+.slider-container {
+  position: relative;
+  overflow: hidden;
+  margin-top: 50px;
+}
+.slider-container img{
+  image-resolution: inherit;
+}
+
+.image-container {
+  display: flex;
+  transition: transform 0.5s ease;
+  height: 300px;
+}
+
+/* .image-container > img{
+ box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+} */
+
+
+.slide {
+  width: calc(100% / 3); /* Adjust this value based on the number of itemsToShowDesktop */
+  flex: 0 0 auto;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  color: rgb(37, 226, 31);
+}
+
+.left-arrow {
+  left: 10px;
+  z-index: 1;
+}
+
+.right-arrow {
+  right: 10px;
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .image-container {
+    flex-wrap: nowrap;
+  }
+
+  .slide {
+    width: 100%;
+  }
+}

@@ -1,0 +1,51 @@
+.fmpart{
+    width: 80%;
+    margin: auto;
+}
+.eachInps{
+    margin-bottom: 15px;
+}
+.req{
+    color: red;
+    margin: 0px;
+}
+
+.fmgs>div:nth-child(1){
+    text-align: center;
+    background-color: #6a961f;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    font-size: 22px;
+    font-weight: 700;
+    color: white;
+    
+}
+
+.inps{
+    margin-top: 0.3rem;
+    border: 1px solid black;
+    height: 2rem;
+    border-radius: 5px;
+    width: 100%;
+    padding-left: 10px;
+}
+
+.inp:focus{
+    border: 1px solid green;
+    transition: 0.3s;
+    outline: none;
+}
+input::placeholder{
+    text-align: start;
+    padding-left: 0px;
+}
+
+.subbtn{
+    background-color: #ec9f21;
+    padding: 0.5rem;
+    width: 7rem;
+    border-radius: 10px;
+    color: white;
+    border: 2px solid rgb(147, 129, 129);
+   
+}

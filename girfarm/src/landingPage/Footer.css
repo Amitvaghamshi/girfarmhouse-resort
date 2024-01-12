@@ -1,0 +1,57 @@
+.foot-contect{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-top: 80px;
+    background-color: #ec9f21;   
+}
+
+.foot-contect>div{
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+    font-size: 30px;
+    color: white;
+    font-weight: 700;
+    padding: 20px;
+}
+.fontic{
+
+}
+span{
+    margin-left: 20px;
+}
+
+.addr > p{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 35px;
+}
+.copy{
+    font-size: 15px;
+    color: rgb(98, 91, 91);
+    margin-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+
+@media only screen and (min-width: 200px) and (max-width: 480px){
+    .foot-contect{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .foot-contect>div{
+        justify-content: start;
+    }
+
+    .addr > p{
+        text-align:start;
+        padding-left: 40px;
+    }
+    
+}
+
+@media only screen and (min-width: 481px) and (max-width: 850px){
+    
+}

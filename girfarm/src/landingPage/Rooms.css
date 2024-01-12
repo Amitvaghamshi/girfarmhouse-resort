@@ -1,0 +1,38 @@
+#sideshow{
+    width: 90%;
+    height: auto;
+    margin: auto;
+    /* position: relative; */
+    display: grid;
+    place-items: center;
+    margin-top: 60px;
+    overflow: hidden;
+}
+#track{
+    display: flex;
+    width: calc(600*9); 
+    animation: scroll 40s linear infinite;
+}
+#sideshow img{
+    height: 80%;
+}
+.slides{
+    width: 600px;
+    display: flex;
+    align-items: center;
+    /* white-space: nowrap;  */
+}
+.slides img{
+    width: 90%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+@keyframes scroll {  
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-600px * 10)); /* Double the translation distance */
+    }
+}
