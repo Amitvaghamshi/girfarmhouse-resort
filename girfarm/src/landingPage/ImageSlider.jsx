@@ -14,7 +14,7 @@ const ImageSlider = ({ images, itemsToShowMobile = 1, itemsToShowDesktop = 3 }) 
   useEffect(() => {
     const handleResize = () => {
       setWindowWidth(window.innerWidth);
-    };
+  };
 
     window.addEventListener('resize', handleResize);
 

@@ -93,10 +93,7 @@ export const Ragister = () => {
 
     return (
           <div>
-               <div>
-
-               </div>
-
+              
                <div className='fmgs' >
                       <div>
                          <p>Book Inquiry</p>
@@ -123,17 +120,21 @@ export const Ragister = () => {
                         </div>
 
                         <div className='eachInps'>
-                           <p>Booking Date <span className='req'>*</span> </p>
+                           <p>check in Date <span className='req'>*</span> </p>
                            <input name='startdate' className='inps' type="date" onChange={(e)=>handleInps(e)}   required/>
                         </div>
 
                         <div className='eachInps'>
-                           <p>End Date  </p>
+                           <p>check out Date  </p>
                            <input name='enddate' className='inps' onChange={(e)=>handleInps(e)}  type="date" />
                         </div>
                         
                         <button className='subbtn' type='submit' onClick={(e)=>sendMail(e)}>Submit</button>
                       </form>
+               </div>
+
+               <div>
+                   Note: 
                </div>
           </div>
     ); 
