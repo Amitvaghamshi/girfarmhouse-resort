@@ -13,7 +13,8 @@ export const Ragister = () => {
         people:"",
         startdate:"",
         enddate:"",
-        email:""
+        email:"",
+        child:""
     });
 
     function handleInps(event){
@@ -57,7 +58,7 @@ export const Ragister = () => {
         let startDate= new Date(data.current.startdate).toLocaleDateString("en-IN")
         let endDate= new Date(data.current.enddate).toLocaleDateString("en-IN")
 
-        let message=`You have new Ragistation from ${data.current.name} with ${data.current.people} person  whose mobile number is ${data.current.number} and mail is ${data.current.email} and coming from  ${startDate} to  ${endDate} `
+        let message=`You have new Ragistation from ${data.current.name} with ${data.current.people} Adult and  ${data.current.people} child  whose mobile number is ${data.current.number} and mail is ${data.current.email} and coming from  ${startDate} to  ${endDate} `
 
         var myHeaders = new Headers();
         myHeaders.append("Content-Type", "application/json");
@@ -81,10 +82,11 @@ export const Ragister = () => {
         redirect: 'follow'
         };
 
-        fetch("https://api.emailjs.com/api/v1.0/email/send", requestOptions)
-        .then(response => response.text())
-        .then(result => console.log(result))
-        .catch(error => console.log('error', error));
+      //   fetch("https://api.emailjs.com/api/v1.0/email/send", requestOptions)
+      //   .then(response => response.text())
+      //   .then(result => console.log(result))
+      //   .catch(error => console.log('error', error));
+      console.log(raw)
       
         alert("Your details sended Sucessfully they will get back to you soon");
         navigate("/");
@@ -93,6 +95,8 @@ export const Ragister = () => {
 
     return (
           <div>
+
+              <div id='nvb'></div>
               
                <div className='fmgs' >
                       <div>
@@ -115,8 +119,13 @@ export const Ragister = () => {
                         </div>
 
                         <div className='eachInps'>
-                           <p> Number of Person <span className='req'>*</span> </p>
+                           <p> Number of Adult <span className='req'>*</span> </p>
                            <input className='inps' name='people' type="number" onChange={(e)=>handleInps(e)}  placeholder='number of persons' required/>
+                        </div>
+
+                        <div className='eachInps'>
+                           <p> Number of child <span className='req'>*</span> </p>
+                           <input className='inps' name='child' type="number" onChange={(e)=>handleInps(e)}  placeholder='number of persons' required/>
                         </div>
 
                         <div className='eachInps'>
@@ -133,8 +142,8 @@ export const Ragister = () => {
                       </form>
                </div>
 
-               <div>
-                   Note: 
+               <div  style={{width:"80%",margin:"auto",marginTop:"2rem",color:"red",fontWeight:"600"}} >
+                   Note: Check-in time begins at 11 AM, and check-out time is set at 11 AM the following 
                </div>
           </div>
     ); 
