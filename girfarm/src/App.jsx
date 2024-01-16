@@ -9,7 +9,7 @@ import Whatsappbtn from './landingPage/Whatsappbtn';
 //import {MyRouter} from "./routes/MyRouter.jsx";
 import { Route,Routes  } from 'react-router-dom';
 import {Ragister} from "./landingPage/Ragister.jsx";
-
+import MetaInfo from "./landingPage/MetaInfo.jsx"
 
 function App() {
 
@@ -23,9 +23,8 @@ function App() {
 
 
   return (
-    <div>
-
-
+    <div>       
+         <MetaInfo/>
          <Routes>
              <Route path="/"  element={comps}/>
              <Route path="/ragister"  element={<Ragister/>}/>

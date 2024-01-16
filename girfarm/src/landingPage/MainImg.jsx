@@ -31,7 +31,7 @@ const MainImg = () => {
         <div id='main-part'>
               <div>
                 <div className='mid-img' >
-                    <img className='img-only' src="https://i.ibb.co/m6RxpLn/main.jpg" alt="" />
+                    <img className='img-only' src="https://i.ibb.co/m6RxpLn/main.jpg" alt="Gir Madhuli rooms" />
                 </div>
               </div>
               <div>

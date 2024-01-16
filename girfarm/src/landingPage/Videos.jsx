@@ -3,7 +3,7 @@ import "./Videos.css";
 
 const Videos = () => {
     return (
-        <div id='vds'>
+        <div id='videos'>
               <div>
                   <h1 style={{fontSize:"35px",marginTop:"40px",marginBottom:"50px", textAlign:"center",fontWeight:"600",color:"#6a961f"}} >Have a Glimpse of these videos
                   <hr style={{width:"10%",margin:"auto",height:"2px",backgroundColor:"#ec9f21",borderRadius:"3px"}} />

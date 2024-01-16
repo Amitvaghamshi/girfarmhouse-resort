@@ -40,7 +40,7 @@ const ImageSlider = ({ images, itemsToShowMobile = 1, itemsToShowDesktop = 3 }) 
   const transformValue = `translateX(${-currentIndex * (itemWidthPercentage + marginPercentage)}%)`;
 
   return (
-    <div id='sld'>
+    <div id='gallery'>
 
 
         <div>

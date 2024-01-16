@@ -2,7 +2,7 @@ import React from 'react';
 import "./Rooms.css";
 const Rooms = () => {
     return (
-        <div id='rms' style={{marginTop:"50px",marginBottom:"60px"}}>
+        <div id='rooms' style={{marginTop:"50px",marginBottom:"60px"}}>
             <div>
                 <h1 style={{fontSize:"35px",textAlign:"center",fontWeight:"600",color:"#6a961f"}} >Rooms at Gir Madhuli Farmhouse</h1>
                 <hr style={{width:"10%",margin:"auto",height:"2px",backgroundColor:"#ec9f21",borderRadius:"3px"}} />

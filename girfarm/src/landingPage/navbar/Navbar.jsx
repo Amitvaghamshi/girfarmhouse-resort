@@ -89,10 +89,10 @@ const MenuLinks = ({ isOpen }) => {
         pt={[4, 4, 0, 0]}
       >
         <Menu>
-          <MenuItem fontWeight="700" fontSize="20px" to="/rooms"> <a href="#hms"> Home </a> </MenuItem>
-          <MenuItem fontWeight="700"  fontSize="20px" ><a href="#rms">Rooms </a> </MenuItem>
-          <MenuItem fontWeight="700"  fontSize="20px"  > <a href="#sld"> Galary  </a>  </MenuItem>
-          <MenuItem fontWeight="700"  fontSize="20px" > <a href="#vds"> Videos  </a>  </MenuItem>
+          <MenuItem fontWeight="700" fontSize="20px" to="/rooms"> <a href="#home"> Home </a> </MenuItem>
+          <MenuItem fontWeight="700"  fontSize="20px" ><a href="#rooms">Rooms </a> </MenuItem>
+          <MenuItem fontWeight="700"  fontSize="20px"  > <a href="#gallery"> Gallery  </a>  </MenuItem>
+          <MenuItem fontWeight="700"  fontSize="20px" > <a href="#videos"> Videos  </a>  </MenuItem>
         </Menu>
 
          {

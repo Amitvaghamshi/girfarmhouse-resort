@@ -17,15 +17,15 @@ const Front = () => {
     }
 
     return (
-        <div  id='hms' >
+        <div  id='home' >
             <div>
                  <NavBar/>
             </div>
 
             <div  id='main-cont' >
                       <div>
-                           <div id='murli-head'  style={{fontSize:"35px",marginTop:"100px",marginBottom:'0px',color:"white",fontWeight:"800"}}> Gir madhuli Farmhouse located in the heart of Gir Forest. </div>
-                           <p className='murli-tagLine' > Gir - The last home of Asiatic Lions.</p>
+                           <div id='murli-head'  style={{fontSize:"35px",marginTop:"100px",marginBottom:'0px',color:"white",fontWeight:"800"}}> <h1>Gir madhuli Farmhouse located in the heart of Gir Forest. </h1></div>
+                           <p className='murli-tagLine' > <h1> Gir - The last home of Asiatic Lions.</h1></p>
                            
                            <button
                              onClick={openPage}
