@@ -82,11 +82,11 @@ export const Ragister = () => {
         redirect: 'follow'
         };
 
-      //   fetch("https://api.emailjs.com/api/v1.0/email/send", requestOptions)
-      //   .then(response => response.text())
-      //   .then(result => console.log(result))
-      //   .catch(error => console.log('error', error));
-      console.log(raw)
+        fetch("https://api.emailjs.com/api/v1.0/email/send", requestOptions)
+        .then(response => response.text())
+        .then(result => console.log(result))
+        .catch(error => console.log('error', error));
+     // console.log(raw)
       
         alert("Your details sended Sucessfully they will get back to you soon");
         navigate("/");
