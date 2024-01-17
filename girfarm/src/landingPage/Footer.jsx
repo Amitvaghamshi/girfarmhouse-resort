@@ -44,11 +44,11 @@ const Footer = () => {
                     <div className='addr'>
                           <p>Gir madhuli Farm & Resort</p>
                           <p>To : Bhojde(gir)</p>
-                          <p>Ta : Talala</p>
-                          <p>dis : Gir somnath</p>
+                          <p>Taluka : Talala</p>
+                          <p>District : Gir somnath</p>
                     </div>
                     <div className='copy'>
-                        <p>Copyright @2024 , Designed by @mit  </p>
+                        <p>Copyright @2024 , Designed by <a href="https://amitvaghamshi.github.io/">  @mit  </a> </p>
                     </div>
               </div>
         </div>
