@@ -24,7 +24,7 @@ function App() {
 
   return (
     <div>       
-         <MetaInfo/>
+         {/* <MetaInfo/> */}
          <Routes>
              <Route path="/"  element={comps}/>
              <Route path="/ragister"  element={<Ragister/>}/>
