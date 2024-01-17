@@ -143,7 +143,7 @@ export const Ragister = () => {
                </div>
 
                <div  style={{width:"80%",margin:"auto",marginTop:"2rem",color:"red",fontWeight:"600"}} >
-                   Note: Check-in time begins at 11 AM, and check-out time is set at 10 AM the following 
+                 <p> Note: Check-in time begins at 11 AM, and check-out time is at 10 AM of the following day </p>
                </div>
           </div>
     ); 
